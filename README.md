@@ -7,3 +7,159 @@ Enhanced input UX features for React – copy to clipboard, password toggle, cle
 ```bash
 npm install @omergulcicek/enhanced-input
 ```
+
+## Features
+
+✅ **Password Toggle**: Show/hide password functionality with custom icons  
+✅ **Custom Icons**: Support for any React components as icons  
+✅ **TypeScript Support**: Full type safety  
+✅ **Customizable Styling**: Custom class names and styling options  
+✅ **Accessible**: Proper ARIA labels and keyboard support  
+✅ **Flexible**: Works with any CSS framework or custom styles  
+
+## Basic Usage
+
+```tsx
+import { useEnhancedInput } from "@omergulcicek/enhanced-input"
+
+const { inputProps, InputWrapper, wrapperProps } = useEnhancedInput({
+  password: true
+});
+
+return (
+  <InputWrapper {...wrapperProps}>
+    <input {...inputProps} />
+  </InputWrapper>
+)
+```
+
+## Custom Icons
+
+You can customize the show/hide icons with any React component:
+
+```tsx
+import { useEnhancedInput } from "@omergulcicek/enhanced-input"
+
+const { inputProps, InputWrapper, wrapperProps } = useEnhancedInput({
+  password: {
+    icons: {
+      show: <span className="text-xs">Show</span>,
+      hide: <span className="text-xs">Hide</span>,
+    }
+  }
+});
+
+return (
+  <InputWrapper {...wrapperProps}>
+    <input {...inputProps} />
+  </InputWrapper>
+)
+```
+
+## With Lucide React Icons
+
+```tsx
+import { useEnhancedInput } from "@omergulcicek/enhanced-input"
+import { Eye, EyeOff } from "lucide-react"
+
+const { inputProps, InputWrapper, wrapperProps } = useEnhancedInput({
+  password: {
+    icons: {
+      show: <Eye className="size-4" />,
+      hide: <EyeOff className="size-4" />,
+    }
+  }
+});
+
+return (
+  <InputWrapper {...wrapperProps}>
+    <input {...inputProps} />
+  </InputWrapper>
+)
+```
+
+## Custom Styling
+
+```tsx
+import { useEnhancedInput } from "@omergulcicek/enhanced-input"
+
+const { inputProps, InputWrapper, wrapperProps } = useEnhancedInput({
+  password: true,
+  classNames: {
+    wrapper: "my-custom-wrapper", // outer container div
+    suffix: "my-custom-suffix",     // right-side icon container
+    button: "my-custom-button"    // toggle button element
+  }
+});
+
+return (
+  <InputWrapper {...wrapperProps}>
+    <input {...inputProps} />
+  </InputWrapper>
+)
+```
+
+## With Class Name Utility (clsx, cn, etc.)
+
+```tsx
+import { useEnhancedInput } from "@omergulcicek/enhanced-input"
+import { cn } from "@/lib/utils" // your class name utility
+
+const { inputProps, InputWrapper, wrapperProps } = useEnhancedInput({
+  password: true,
+  classNames: {
+    wrapper: "my-custom-wrapper",
+    suffix: "my-custom-suffix", 
+    button: "my-custom-button"
+  },
+  cn // optional
+});
+
+return (
+  <InputWrapper {...wrapperProps} className="border rounded-md">
+    <input {...inputProps} className="px-3 py-2 w-full" />
+  </InputWrapper>
+)
+```
+
+> **Note:** The `cn` parameter is optional. If not provided, the component will work perfectly but conflicting Tailwind classes may not be resolved (e.g., `p-1` and `p-2` both remain in the output). Using a class name utility like `clsx`, `cn`, or `twMerge` ensures proper class merging and conflict resolution.
+
+## API Reference
+
+### useEnhancedInput Options
+
+| Option | Type | Description |
+|--------|------|-------------|
+| `password` | `boolean \| PasswordConfig` | Enable password toggle functionality |
+| `classNames` | `object` | Custom class names for wrapper, suffix, and button |
+| `cn` | `function` | Class name utility function (like clsx or cn) |
+
+### PasswordConfig
+
+| Option | Type | Description |
+|--------|------|-------------|
+| `icons.show` | `React.ReactNode` | Custom icon for show password button |
+| `icons.hide` | `React.ReactNode` | Custom icon for hide password button |
+
+### Return Values
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `inputProps` | `object` | Props to spread on your input element |
+| `InputWrapper` | `Component` | Wrapper component for the input |
+| `wrapperProps` | `object` | Props to spread on InputWrapper |
+| `showPassword` | `boolean` | Current password visibility state |
+| `value` | `string` | Current input value |
+| `setValue` | `function` | Function to update input value |
+
+## Key Benefits
+
+✅ **Zero Configuration**: Works out of the box with sensible defaults  
+✅ **Highly Customizable**: Every aspect can be customized  
+✅ **Framework Agnostic**: Works with any CSS framework  
+✅ **Lightweight**: Minimal bundle size impact  
+✅ **TypeScript First**: Built with TypeScript for the best DX
+
+## Credits
+
+Default icons are adapted from [Lucide](https://lucide.dev) (ISC License)
