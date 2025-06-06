@@ -33,7 +33,7 @@ return (
 )
 ```
 
-## Custom Icons
+## Custom Icons and Text
 
 You can customize the show/hide icons with any React component:
 
@@ -60,13 +60,13 @@ return (
 
 ```tsx
 import { usePasswordInput } from "@omergulcicek/password-input"
-import { Eye, EyeOff } from "lucide-react"
+import { House, Star } from "lucide-react"
 
 const { inputProps, InputWrapper, wrapperProps } = usePasswordInput({
   password: {
     icons: {
-      show: <Eye className="size-4" />,
-      hide: <EyeOff className="size-4" />,
+      show: <House className="size-4" />,
+      hide: <Star className="size-4" />,
     }
   }
 });
