@@ -1,11 +1,11 @@
-# @omergulcicek/enhanced-input
+# @omergulcicek/password-input
 
-Enhanced input UX features for React – copy to clipboard, password toggle, clear button and more.
+Password input hook with password toggle functionality for React.
 
 ## Installation
 
 ```bash
-npm install @omergulcicek/enhanced-input
+npm install @omergulcicek/password-input
 ```
 
 ## Features
@@ -20,9 +20,9 @@ npm install @omergulcicek/enhanced-input
 ## Basic Usage
 
 ```tsx
-import { useEnhancedInput } from "@omergulcicek/enhanced-input"
+import { usePasswordInput } from "@omergulcicek/password-input"
 
-const { inputProps, InputWrapper, wrapperProps } = useEnhancedInput({
+const { inputProps, InputWrapper, wrapperProps } = usePasswordInput({
   password: true
 });
 
@@ -38,9 +38,9 @@ return (
 You can customize the show/hide icons with any React component:
 
 ```tsx
-import { useEnhancedInput } from "@omergulcicek/enhanced-input"
+import { usePasswordInput } from "@omergulcicek/password-input"
 
-const { inputProps, InputWrapper, wrapperProps } = useEnhancedInput({
+const { inputProps, InputWrapper, wrapperProps } = usePasswordInput({
   password: {
     icons: {
       show: <span className="text-xs">Show</span>,
@@ -59,10 +59,10 @@ return (
 ## With Lucide React Icons
 
 ```tsx
-import { useEnhancedInput } from "@omergulcicek/enhanced-input"
+import { usePasswordInput } from "@omergulcicek/password-input"
 import { Eye, EyeOff } from "lucide-react"
 
-const { inputProps, InputWrapper, wrapperProps } = useEnhancedInput({
+const { inputProps, InputWrapper, wrapperProps } = usePasswordInput({
   password: {
     icons: {
       show: <Eye className="size-4" />,
@@ -81,9 +81,9 @@ return (
 ## Custom Styling
 
 ```tsx
-import { useEnhancedInput } from "@omergulcicek/enhanced-input"
+import { usePasswordInput } from "@omergulcicek/password-input"
 
-const { inputProps, InputWrapper, wrapperProps } = useEnhancedInput({
+const { inputProps, InputWrapper, wrapperProps } = usePasswordInput({
   password: true,
   classNames: {
     wrapper: "my-custom-wrapper", // outer container div
@@ -102,10 +102,10 @@ return (
 ## With Class Name Utility (clsx, cn, etc.)
 
 ```tsx
-import { useEnhancedInput } from "@omergulcicek/enhanced-input"
+import { usePasswordInput } from "@omergulcicek/password-input"
 import { cn } from "@/lib/utils" // your class name utility
 
-const { inputProps, InputWrapper, wrapperProps } = useEnhancedInput({
+const { inputProps, InputWrapper, wrapperProps } = usePasswordInput({
   password: true,
   classNames: {
     wrapper: "my-custom-wrapper",
@@ -126,7 +126,7 @@ return (
 
 ## API Reference
 
-### useEnhancedInput Options
+### usePasswordInput Options
 
 | Option | Type | Description |
 |--------|------|-------------|

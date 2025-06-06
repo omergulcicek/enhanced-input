@@ -1,7 +1,7 @@
 {
-  "name": "@omergulcicek/enhanced-input",
+  "name": "@omergulcicek/password-input",
   "version": "1.0.0",
-  "description": "Enhanced input hook with password toggle functionality for React",
+  "description": "Password input hook with password toggle functionality for React",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -41,9 +41,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/omergulcicek/enhanced-input.git"
+    "url": "https://github.com/omergulcicek/password-input.git"
   },
-  "homepage": "https://github.com/omergulcicek/enhanced-input#readme",
+  "homepage": "https://github.com/omergulcicek/password-input#readme",
   "publishConfig": {
     "access": "public"
   }

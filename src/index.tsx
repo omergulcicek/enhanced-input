@@ -14,7 +14,7 @@ type ClassNameFn = (
   ...classes: (string | undefined | null | false)[]
 ) => string;
 
-interface UseEnhancedInputOptions {
+interface UsePasswordInputOptions {
   password?: boolean | PasswordConfig;
   classNames?: {
     wrapper?: string;
@@ -154,14 +154,14 @@ const InputWrapper = memo(
 InputWrapper.displayName = "InputWrapper";
 
 /**
- * Enhanced input hook with password toggle functionality
+ * Password input hook with password toggle functionality
  * @param options - Configuration options for the hook
  * @param options.password - Enable password functionality (boolean or config object)
  * @param options.classNames - Custom class names for styling
  * @param options.cn - Custom class name utility function
  * @returns Object containing input props, show password state, and InputWrapper component
  */
-export function useEnhancedInput(options: UseEnhancedInputOptions = {}) {
+export function usePasswordInput(options: UsePasswordInputOptions = {}) {
   const [showPassword, setShowPassword] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const { password, classNames = {}, cn } = options;
