@@ -1,6 +1,12 @@
 # @omergulcicek/password-input
 
-Password input hook with password toggle functionality for React.
+React hook that adds show/hide toggle to password inputs.
+
+## 🚀 Live Demo
+
+Try the interactive demo: **[omergulcicek-password-input.vercel.app](https://omergulcicek-password-input.vercel.app/)**
+
+See password input with show/hide toggle functionality in action.
 
 ## Installation
 

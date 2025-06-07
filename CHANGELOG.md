@@ -1,5 +1,19 @@
 # Changelog
 
+## [v1.0.2] - 2025-06-08
+
+### Changed
+- Updated package homepage
+
+## [v1.0.1] - 2025-06-08
+
+### Changed
+- Updated package description in README
+
+### Documentation
+- Enhanced project description for better clarity
+- Added live demo link for hands-on testing
+
 ## [v1.0.0] - 2025-06-06
 
 ### Added

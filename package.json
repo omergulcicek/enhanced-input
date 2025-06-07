@@ -1,7 +1,7 @@
 {
   "name": "@omergulcicek/password-input",
-  "version": "1.0.0",
-  "description": "Password input hook with password toggle functionality for React",
+  "version": "1.0.2",
+  "description": "React hook that adds show/hide toggle to password inputs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -43,7 +43,7 @@
     "type": "git",
     "url": "https://github.com/omergulcicek/password-input.git"
   },
-  "homepage": "https://github.com/omergulcicek/password-input#readme",
+  "homepage": "https://omergulcicek-password-input.vercel.app/",
   "publishConfig": {
     "access": "public"
   }
