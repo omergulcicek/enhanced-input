@@ -22,12 +22,12 @@ npm install @omergulcicek/password-input
 
 ## Features
 
-✅ **Password Toggle**: Show/hide password functionality with custom icons  
-✅ **Custom Icons**: Support for any React components as icons  
-✅ **TypeScript Support**: Full type safety  
-✅ **Customizable Styling**: Custom class names and styling options  
-✅ **Accessible**: Proper ARIA labels and keyboard support  
-✅ **Flexible**: Works with any CSS framework or custom styles  
+**Password Toggle**: Show/hide password functionality with custom icons  
+**Custom Icons**: Support for any React components as icons  
+**TypeScript Support**: Full type safety  
+**Customizable Styling**: Custom class names and styling options  
+**Accessible**: Proper ARIA labels and keyboard support  
+**Flexible**: Works with any CSS framework or custom styles  
 
 ## Basic Usage
 
@@ -166,12 +166,16 @@ return (
 
 ## Key Benefits
 
-✅ **Zero Configuration**: Works out of the box with sensible defaults  
-✅ **Highly Customizable**: Every aspect can be customized  
-✅ **Framework Agnostic**: Works with any CSS framework  
-✅ **Lightweight**: Minimal bundle size impact  
-✅ **TypeScript First**: Built with TypeScript for the best DX
+**Zero Configuration**: Works out of the box with sensible defaults  
+**Highly Customizable**: Every aspect can be customized  
+**Framework Agnostic**: Works with any CSS framework  
+**Lightweight**: Minimal bundle size impact  
+**TypeScript First**: Built with TypeScript for the best DX
 
 ## Credits
 
 Default icons are adapted from [Lucide](https://lucide.dev) (ISC License)
+
+### Contributors
+
+- [@omergulcicek](https://github.com/omergulcicek)
