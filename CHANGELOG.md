@@ -1,5 +1,15 @@
 # Changelog
 
+## [v1.2.0] - 2025-06-11
+
+### Fixed
+- Corrected peer dependency version ranges in package.json
+
+## [v1.1.0] - 2025-06-09
+
+### Changed
+- The project uses pure CSS classes instead of Tailwind CSS utility classes.
+
 ## [v1.0.2] - 2025-06-08
 
 ### Changed

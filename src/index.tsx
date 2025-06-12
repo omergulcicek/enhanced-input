@@ -2,6 +2,7 @@
 // https://omergulcicek.com • https://github.com/omergulcicek
 
 import { useState, useCallback, memo, useRef } from "react";
+import "../dist/styles.css";
 
 interface PasswordConfig {
   icons?: {
@@ -75,10 +76,9 @@ const DEFAULT_ICONS = {
 } as const;
 
 const DEFAULT_CLASSES = {
-  wrapper: "relative",
-  suffix:
-    "flex bg-white absolute right-2 top-1/2 gap-1 items-center -translate-y-1/2",
-  button: "p-1 focus:outline-none",
+  wrapper: "password-input-wrapper",
+  suffix: "password-input-suffix",
+  button: "password-input-button",
 } as const;
 
 const combineClasses = (
@@ -192,7 +192,7 @@ export function usePasswordInput(options: UsePasswordInputOptions = {}) {
           type: showPassword ? "text" : "password",
           value: inputValue,
           onChange: handleInputChange,
-          className: "pr-10",
+          className: "password-input",
           ref: inputRef,
         }
       : {},

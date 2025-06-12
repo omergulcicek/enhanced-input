@@ -1,16 +1,17 @@
 {
   "name": "@omergulcicek/password-input",
-  "version": "1.0.2",
+  "version": "1.2.0",
   "description": "React hook that adds show/hide toggle to password inputs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist",
     "README.md",
-    "package.json"
+    "package.json",
+    "src/styles.css"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cp src/styles.css dist/",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -30,14 +31,14 @@
   "author": "Ömer Gülçiçek",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^18.0.0",
-    "lucide-react": "^0.263.0",
-    "clsx": "^2.0.0",
-    "tailwind-merge": "^1.14.0"
+    "react": ">=18.0.0",
+    "lucide-react": ">=0.263.0",
+    "clsx": ">=2.0.0",
+    "tailwind-merge": ">=1.14.0"
   },
   "devDependencies": {
-    "typescript": "^5.0.0",
-    "@types/react": "^18.0.0"
+    "typescript": ">=5.0.0",
+    "@types/react": ">=18.0.0"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,27 @@
+.password-input-wrapper {
+  position: relative;
+}
+
+.password-input-suffix {
+  display: flex;
+  background-color: white;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  gap: 4px;
+  align-items: center;
+  transform: translateY(-50%);
+}
+
+.password-input-button {
+  cursor: pointer;
+  padding: 4px;
+}
+
+.password-input-button:focus {
+  outline: none;
+}
+
+.password-input {
+  padding-right: 40px;
+} 
