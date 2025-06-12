@@ -2,6 +2,12 @@
 
 React hook that adds show/hide toggle to password inputs.
 
+![npm](https://img.shields.io/npm/v/@omergulcicek/password-input)
+![bundlephobia](https://img.shields.io/bundlephobia/minzip/@omergulcicek/password-input)
+![types](https://img.shields.io/npm/types/@omergulcicek/password-input)
+![license](https://img.shields.io/npm/l/@omergulcicek/password-input)
+![npm downloads](https://img.shields.io/npm/dw/@omergulcicek/password-input)
+
 ## 🚀 Live Demo
 
 Try the interactive demo: **[omergulcicek-password-input.vercel.app](https://omergulcicek-password-input.vercel.app/)**
